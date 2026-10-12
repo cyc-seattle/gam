@@ -1,0 +1,21 @@
+# Secrets
+.env*
+
+# GAM credentials live in ~/.config/gam/; these keep a stray copy out of git.
+client_secrets.json
+oauth2service.json
+oauth2.txt
+oauth2.txt.lock
+gamcache/
+*.p12
+
+# Local plan drafts. Plans live on issues.
+.plans/
+
+# Personal agent and editor config
+CLAUDE.md
+.claude/
+.cursor/
+.vscode/
+.idea/
+mise.local.toml

@@ -6,7 +6,7 @@ sheet_name="Groups Export"
 
 gam print groups name description settings \
     todrive \
-    tduser ${GAM_ADMIN_USER} \
+    tduser "${GAM_ADMIN_USER}" \
     tdfileid "${GAM_SPREADSHEET_ID}" tdretaintitle \
     tdsheet "${sheet_name}" tdupdatesheet \
     tdnobrowser tdnoemail

@@ -1,14 +1,14 @@
-This directory contains scripts and configuration for using [GAM](https://github.com/GAM-team/GAM) to manage CYC
+This repo holds scripts and configuration for using [GAM](https://github.com/GAM-team/GAM) to manage CYC
 Community Sailing Center's Google Workspace account.
 
-`packages/gsuite-sync` syncs group membership, managers, owners, and settings from the CRM. Use
+`gsuite-sync` (in [`cyc-seattle/isthmia`](https://github.com/cyc-seattle/isthmia), `packages/gsuite-sync`) syncs group membership, managers, owners, and settings from the CRM. Use
 these scripts only as the break-glass path when that job is broken: read back live state with
 `export-groups`/`export-group-members`, or apply a settings template by hand with
 `apply-templates` if the Groups Settings API rejects the job's service account.
 
 ## Environment Variables
 
-The scripts in this directory utilize environment variables for configuration, which are set in the root `mise.toml`:
+The scripts read these environment variables, which `mise.toml` sets:
 
 - `GAM_ADMIN_USER`: The user that GAM operates under
 - `GAM_SPREADSHEET_ID`: ID of the spreadsheet to read batch commands from
@@ -17,8 +17,8 @@ The scripts in this directory utilize environment variables for configuration, w
 
 GAM requires a GCP project with a service account for domain-wide delegation, and an OAuth token for the admin user.
 
-Run the `mise run` tasks below from this directory, for example `cd gam && mise run auth`. From the repository root,
-`mise run check` runs the repository's checks instead.
+Run `mise run install` first to get `gam` and `shellcheck`, then the `mise run` tasks below. `mise run ci` lints the
+scripts.
 
 ### Using an existing service account
 
@@ -43,7 +43,7 @@ This will open a browser for Google OAuth and create `client_secrets.json` and `
 After setting up the service account, verify it has the required API scopes for domain-wide delegation:
 
 ```bash
-mise run check
+mise run check-service-account
 ```
 
 This will list any missing scopes and provide a link to authorize them in the Google Admin console.
@@ -97,7 +97,7 @@ Exports all group members across all groups to the "Groups Members Export" works
 
 The JSON files in the `templates` directory contain group settings to apply to different types of groups. See the [GAM Cheat Sheet](https://gamcheatsheet.com/GAM%20Cheat%20Sheet%20A4.pdf) for more details on group settings.
 
-The same four templates also live in `packages/gsuite` (`group-settings-templates.ts`), which is what `gsuite-sync`'s settings pass applies day to day - these files are only the break-glass path `apply-templates` reads. Keep the two copies in step: a change here belongs there too, and vice versa.
+The same four templates also live in [`cyc-seattle/gsuite-sdk`](https://github.com/cyc-seattle/gsuite-sdk) (`src/group-settings-templates.ts`), which is what `gsuite-sync`'s settings pass applies day to day - these files are only the break-glass path `apply-templates` reads. Keep the two copies in step: a change here belongs there too, and vice versa.
 
 ### announcement.json
 
