@@ -3,50 +3,50 @@
 lockfile_version = 3
 
 [[tools.gam]]
-version = "7.48.25"
+version = "7.48.26"
 backend = "github:GAM-team/GAM"
 specifiers = ["latest"]
 
 [tools.gam."platforms.linux-arm64"]
-checksum = "sha256:40bdeab2341196582937d79916c77f296fa9af6f52096ed665cf10046f603dd2"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-linux-arm64-legacy.tar.xz"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759616"
+checksum = "sha256:6c0d40ef6fa2356646593ace8ccdc4ba11fb6d20621aeef0e73c1deb553a3bdf"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-linux-arm64-legacy.tar.xz"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405742"
 provenance = "github-attestations"
 
 [tools.gam."platforms.linux-arm64-musl"]
-checksum = "sha256:40bdeab2341196582937d79916c77f296fa9af6f52096ed665cf10046f603dd2"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-linux-arm64-legacy.tar.xz"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759616"
+checksum = "sha256:6c0d40ef6fa2356646593ace8ccdc4ba11fb6d20621aeef0e73c1deb553a3bdf"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-linux-arm64-legacy.tar.xz"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405742"
 provenance = "github-attestations"
 
 [tools.gam."platforms.linux-x64"]
-checksum = "sha256:539eb156c0885349c10f3c9e4a45e7eae55d13ef02b9be55f95b34464fce8cb7"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-linux-x86_64-legacy.tar.xz"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759614"
+checksum = "sha256:149c7b5d2342ea3284cda15a6fbedf45301bcf76a0f91a7d0f3ecfb0621cdabe"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-linux-x86_64-legacy.tar.xz"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405745"
 provenance = "github-attestations"
 
 [tools.gam."platforms.linux-x64-musl"]
-checksum = "sha256:539eb156c0885349c10f3c9e4a45e7eae55d13ef02b9be55f95b34464fce8cb7"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-linux-x86_64-legacy.tar.xz"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759614"
+checksum = "sha256:149c7b5d2342ea3284cda15a6fbedf45301bcf76a0f91a7d0f3ecfb0621cdabe"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-linux-x86_64-legacy.tar.xz"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405745"
 provenance = "github-attestations"
 
 [tools.gam."platforms.macos-arm64"]
-checksum = "sha256:10d3267137cc22459a5c337d2505c23cf8aa3e4800ec4d2e1d4759852d7cddde"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-macos15.7-arm64.tar.xz"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759620"
+checksum = "sha256:964fdfafb55edcb1950eab7e9adeffe5c5ef3b88130450f79e3cecd8f263752d"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-macos15.7-arm64.tar.xz"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405738"
 provenance = "github-attestations"
 
 [tools.gam."platforms.macos-x64"]
-checksum = "sha256:322763ee71c70c83863a1aba4acffbbc3d50224cd41422af948a4df455ae7f25"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-macos15.7-x86_64.tar.xz"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759613"
+checksum = "sha256:ef8bf9719d8b737631ef78898913aa631fa2b6d2a99787debdde98d2d6fe5dd8"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-macos15.7-x86_64.tar.xz"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405737"
 provenance = "github-attestations"
 
 [tools.gam."platforms.windows-x64"]
-checksum = "sha256:48501157bcba9c9b03395cb94800cc346f3da48800387df0ffeae488a8fc9dcb"
-url = "https://github.com/GAM-team/GAM/releases/download/v7.48.25/gam-7.48.25-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/628759605"
+checksum = "sha256:7fa966b5b8eba7d4294f0bba8c41047d0807a671c8d233d0e222ed963f114ac7"
+url = "https://github.com/GAM-team/GAM/releases/download/v7.48.26/gam-7.48.26-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/GAM-team/GAM/releases/assets/634405729"
 provenance = "github-attestations"
 
 [[tools.shellcheck]]
