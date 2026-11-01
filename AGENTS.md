@@ -1,7 +1,7 @@
 # AGENTS.md
 
 Break-glass [GAM](https://github.com/GAM-team/GAM) scripts and Google Group settings templates for CYC's Google
-Workspace. `gsuite-sync` in `cyc-seattle/isthmia` does this work day to day; use this repo only when it's broken.
+Workspace. `gsuite-sync` in `cyc-seattle/platform` does this work day to day; use this repo only when it's broken.
 See `README.md` for setup and each script.
 
 ## Tasks
