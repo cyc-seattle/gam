@@ -1,7 +1,7 @@
 This repo holds scripts and configuration for using [GAM](https://github.com/GAM-team/GAM) to manage CYC
 Community Sailing Center's Google Workspace account.
 
-`gsuite-sync` (in [`cyc-seattle/isthmia`](https://github.com/cyc-seattle/isthmia), `packages/gsuite-sync`) syncs group membership, managers, owners, and settings from the CRM. Use
+`gsuite-sync` (in [`cyc-seattle/platform`](https://github.com/cyc-seattle/platform), `packages/gsuite-sync`) syncs group membership, managers, owners, and settings from the CRM. Use
 these scripts only as the break-glass path when that job is broken: read back live state with
 `export-groups`/`export-group-members`, or apply a settings template by hand with
 `apply-templates` if the Groups Settings API rejects the job's service account.
