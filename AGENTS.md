@@ -1,5 +1,7 @@
 # AGENTS.md
 
+Follow `cyc:conventions` (the rules shared by every cyc-seattle repo).
+
 Break-glass [GAM](https://github.com/GAM-team/GAM) scripts and Google Group settings templates for CYC's Google
 Workspace. `gsuite-sync` in `cyc-seattle/platform` does this work day to day; use this repo only when it's broken.
 See `README.md` for setup and each script.
@@ -32,7 +34,7 @@ Comments explain **why**, not what. Keep them to a line or two. Write one where 
 wrong: a non-obvious constraint, a surprising API behavior, or a decision that looks arbitrary but isn't.
 
 - Don't narrate the code, restate the diff, or argue for the approach you chose.
-- Cite an issue (`#107`) instead of recounting its discussion.
+- Cite an issue instead of recounting its discussion.
 - Don't cite a local plan file.
 - Test each comment: if you deleted it, would a competent reader still make the same change correctly? If yes,
   delete it.
@@ -40,5 +42,5 @@ wrong: a non-obvious constraint, a surprising API behavior, or a decision that l
 The same applies to docs:
 
 - **Record the outcome, not the path to it.** Say what to do today, not what failed on the way.
-- **No personal identifiers.** Use a role name or `<placeholder>` instead of an email address or a numeric account
-  ID. Where a command needs a literal, use it once.
+- Use a role name or `<placeholder>` instead of an email address or a numeric account ID. Where a command needs a
+  literal, use it once.
